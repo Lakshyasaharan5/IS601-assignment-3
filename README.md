@@ -22,6 +22,13 @@ Traceback (most recent call last):
 ValueError: Can't divide by zero.
 ```
 
+**After handling the exception gracefully in REPL** 
+```bash
+calc> div 12 0
+Can't divide by zero.
+calc> 
+```
+
 #### Add operation
 ```bash
 calc> add 2 3
