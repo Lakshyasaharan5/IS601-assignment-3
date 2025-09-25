@@ -88,3 +88,4 @@ pytest
 ## Github Actions for test
 
 Github workflow has been implemented. When you push your code then Github Action will automatically test it using pytest.
+There are 36 test cases to cover all the edge cases.
