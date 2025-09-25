@@ -13,3 +13,10 @@ class Operations:
         This static method takes two numbers (a and b) and returns their difference (a - b).        
         """
         return a - b 
+
+    @staticmethod
+    def multiplication(a: float, b: float) -> float:
+        """
+        This static method takes two numbers (a and b) and returns their product (a * b).        
+        """
+        return a * b
