@@ -39,7 +39,11 @@ def repl():
             elif cmd == "mul":
                 result = Operations.multiplication(x, y)
             elif cmd == "div":
-                result = Operations.division(x, y)
+                try:
+                    result = Operations.division(x, y)
+                except ValueError as e:
+                    print(e)
+                    continue
 
             print(result)
         else:
