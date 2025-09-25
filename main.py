@@ -1,4 +1,8 @@
-from calculator.operations import Operations
+"""
+Main entry point to start calculator
+"""
 
-print(Operations.addition(-0.5, 1))
+from calculator.repl import repl
 
+if __name__ == "__main__":
+    repl()
