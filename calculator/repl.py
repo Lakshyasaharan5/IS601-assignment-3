@@ -28,7 +28,7 @@ def repl():
             try:
                 x = float(command[1])
                 y = float(command[2])
-            except ValueError:
+            except ValueError: 
                 print("Error: Please provide two numbers")
                 continue
 
@@ -42,7 +42,9 @@ def repl():
                 try:
                     result = Operations.division(x, y)
                 except ValueError as e:
-                    print(e)
+                    print(str(e))
+                    result = None
+                if result is None:
                     continue
 
             print(result)
