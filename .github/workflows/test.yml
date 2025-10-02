@@ -26,5 +26,9 @@ jobs:
 
       - name: Run tests
         run: |
-          pytest
+          pytest --cov=calculator tests/
+
+      - name: Check coverage
+        run: |
+          coverage report --fail-under=100
 
